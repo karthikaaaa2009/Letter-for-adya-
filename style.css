@@ -6861,3 +6861,36 @@ body {
     width: 5px;
   }
 }
+
+/* --- MOBILE FIXES --- */
+
+/* Screen ke bahar jaane se rokne ke liye */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cake ko screen ke andar fit rakhne ke liye */
+img, canvas {
+    max-width: 90%; 
+    height: auto;
+    margin: 0 auto; /* Center karne ke liye */
+    display: block;
+}
+
+/* Phone ke liye text ko thoda chota karna */
+@media screen and (max-width: 600px) {
+    /* Tu in numbers ko apne hisaab se kam/zyada kar sakta hai */
+    h1, h2 {
+        font-size: 22px !important; 
+        padding: 0 10px;
+        line-height: 1.4;
+    }
+    
+    p {
+        font-size: 14px !important;
+        padding: 0 10px;
+    }
+}
